@@ -6,19 +6,17 @@
 * Optional: Install Nvidia Docker to access gpu inside docker - https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker 
 
 ### Installation
-1. Clone this repo
+1. Pull image from Dockerhub
+   ```sh
+   sudo docker pull nahsen/ros-melodic-fetch
+   ```
+   
+2. Clone this repo
    ```sh
    git clone https://github.com/Nick-AhSen/fetch_docker.git
    cd fetch_docker
    ```
-2. Pull image from Dockerhub
-   ```sh
-   sudo docker pull nahsen/ros-melodic-fetch
-   ```
-3. Run the docker
-    ```sh
-    sudo ./start.sh
-    ```
+   
 ### Setting up a catkin workspace
 1. create your catkin folder
    ```sh
@@ -29,8 +27,10 @@
    ```sh
    git clone https://github.com/Nick-AhSen/fetch_ws.git
    ```
-3. build
+
+### Running the docker
+  start.sh script contains the command to run the docker. First cd to the fetch_docker directory and run:
    ```sh
-   catkin build
+      sudo ./start.sh
    ```
 
