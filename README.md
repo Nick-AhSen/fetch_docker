@@ -19,3 +19,18 @@
     ```sh
     sudo ./start.sh
     ```
+### Setting up a catkin workspace
+1. create your catkin folder
+   ```sh
+   mkdir catkin_ws/src
+   cd catkin_ws/src
+   ```
+2. clone fetch_ws repo
+   ```sh
+   git clone https://github.com/Nick-AhSen/fetch_ws.git
+   ```
+3. build
+   ```sh
+   catkin build
+   ```
+
